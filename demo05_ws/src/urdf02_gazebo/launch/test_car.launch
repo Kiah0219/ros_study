@@ -1,0 +1,11 @@
+<launch>
+    <!-- 打开gazebo仿真 -->
+    <include file="$(find urdf02_gazebo)/launch/demo03_env.launch" />
+    <!-- 打开rviz仿真 -->
+    <include file="$(find urdf02_gazebo)/launch/demo04_sensor.launch" />
+</launch>
+
+
+
+<!-- 发布话题数据：rostopic pub -r10 /cmd_vel tab补齐 -->
+<!-- 键盘控制节点：rosrun teleop_twist_keyboard teleop_twist_keyboard.py -->

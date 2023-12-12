@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find urdf02_gazebo)/launch/demo03_env.launch" />
+    <include file="$(find nav_demo)/launch/nav01_slam.launch" />
+    <!-- 启动键盘控制节点：rosrun teleop_twist_keyboard teleop_twist_keyboard.py -->
+</launch>

@@ -1,0 +1,24 @@
+<launch>
+   <!-- 启动gazebo -->
+    <include file="$(find urdf02_gazebo)/launch/demo03_env.launch" />
+    <!-- 启动键盘控制节点：rosrun teleop_twist_keyboard teleop_twist_keyboard.py -->
+    <!-- 运行rviz -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher" 
+                        args="0 0 0 -1.57 0 -1.57 /support /support_depth" />
+                        <!-- 参数分别是(偏移量x,y,z，欧拉角yall,pitch,roll) rpy(xyz)-->
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+    <node pkg="rviz" type="rviz" name="rviz" arg="$(find nav_demo)/configure/test_amcl.rviz"/>
+    <!-- 加载地图服务 -->
+    <include file="$(find nav_demo)/launch/nav03_map_server.launch"/>
+    <!-- 启动AMCL节点 -->
+    <include file="$(find nav_demo)/launch/nav04_amcl.launch" />
+    <!-- 启动键盘控制节点：rosrun teleop_twist_keyboard teleop_twist_keyboard.py -->
+</launch>
+
+<!-- 
+map:传感器定位
+odom：里程计定位
+base_link：机器人根坐标系
+map->odom->base_link或base_footprint 
+-->
