@@ -4,6 +4,7 @@ code for ros study about autolabor ROS Robotics Tutorial
 ## Requirements for the environment
 * ubuntu20.04
 * ros-noetic
+* use vscode edit code
 
 ## Detailed description
 ### demo02
