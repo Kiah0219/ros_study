@@ -11,6 +11,9 @@ code for ros study about autolabor ROS Robotics Tutorial
 ### demo03_ws
 ### demo04_ws
 ### demo05_ws
+- Display robot URDF models in rviz
+- Displayed The URDF car model in Gazebo
+- Implement navigation module
 ### demo06_ws
 
 ## References
