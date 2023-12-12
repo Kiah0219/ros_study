@@ -8,7 +8,7 @@ code for ros study about autolabor ROS Robotics Tutorial
 
 ## Notice
 * you may need to install other software such as g++/gcc
-* each demo folder is a ros workspace，in order to make it easier for some people to use this repository directly there are no devel and build folders，however in practice you may need to delete the devel and build folders and catkin_make again
+* each demo folder is a ros workspace，in order to make it easier for some people to use this repository directly there are not delete devel and build folders，however in practice you may need to delete the devel and build folders and catkin_make again
 
 ## Detailed description
 ### demo02
