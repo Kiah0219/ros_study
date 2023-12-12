@@ -1,0 +1,2 @@
+demo01_action:demo02_dr
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/koy/demo06_ws/devel -DCMAKE_INSTALL_PREFIX=/home/koy/demo06_ws/install -G Unix Makefiles

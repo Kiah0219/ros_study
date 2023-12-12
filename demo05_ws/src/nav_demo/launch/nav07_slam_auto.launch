@@ -1,0 +1,11 @@
+<!-- 集成slam与导航，实现机器人自主移动和地图构建 -->
+<launch>
+    <!--启用gazebo-->
+    <include file="$(find urdf02_gazebo)/launch/demo03_env.launch" />
+    <!-- 启动SLAM节点 --><!-- 运行rviz -->
+    <include file="$(find nav_demo)/launch/nav01_slam.launch" />
+    <!-- 运行move_base节点 -->
+    <include file="$(find nav_demo)/launch/nav05_path.launch" />
+   
+    
+</launch>

@@ -1,0 +1,2 @@
+plumbing_param_server:plumbing_pub_sub:plumbing_server_client:plumbing_test
+-DCATKIN_DEVEL_PREFIX=/home/koy/demo03_ws/devel -DCMAKE_INSTALL_PREFIX=/home/koy/demo03_ws/install -G Unix Makefiles

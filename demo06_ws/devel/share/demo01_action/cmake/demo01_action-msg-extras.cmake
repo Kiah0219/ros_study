@@ -1,0 +1,2 @@
+set(demo01_action_MESSAGE_FILES "/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsAction.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsActionGoal.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsActionResult.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsActionFeedback.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsGoal.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsResult.msg;/home/koy/demo06_ws/devel/share/demo01_action/msg/AddIntsFeedback.msg")
+set(demo01_action_SERVICE_FILES "")

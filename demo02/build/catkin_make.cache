@@ -1,0 +1,2 @@
+hello_vscode
+-DCATKIN_DEVEL_PREFIX=/home/koy/demo02/devel -DCMAKE_INSTALL_PREFIX=/home/koy/demo02/install -G Unix Makefiles

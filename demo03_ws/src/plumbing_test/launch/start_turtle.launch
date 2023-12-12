@@ -1,0 +1,7 @@
+<!--启动乌龟GUI与键盘控制节点-->
+<launch>
+    <!--乌龟gui-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen"/>
+    <!--乌龟控制-->
+    <node pkg="turtlesim" type="turtlesim_teleop_key" name="key" output="screen"/>
+</launch>

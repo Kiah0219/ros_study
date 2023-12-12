@@ -1,0 +1,2 @@
+rosbag_demo:tf01_static:tf02_dynamic:tf03_tfs
+-DCATKIN_DEVEL_PREFIX=/home/koy/demo04_ws/devel -DCMAKE_INSTALL_PREFIX=/home/koy/demo04_ws/install -G Unix Makefiles
