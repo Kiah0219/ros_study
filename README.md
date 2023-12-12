@@ -1,7 +1,7 @@
 # ros_study
 code for ros study about autolabor ROS Robotics Tutorial
 
-## Requirements for the use environment
+## Requirements for the environment
 * ubuntu20.04
 * ros-noetic
 
