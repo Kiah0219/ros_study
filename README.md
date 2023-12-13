@@ -12,13 +12,20 @@ code for ros study about autolabor ROS Robotics Tutorial
 
 ## Detailed description
 ### demo02
+* Use a simple roslaunch file to run multiple nodes eliminating the need to use multiple rosrun commands
+* Usage：
+* open workspace folder and `catkin_make`
+* then `roslaunch demo02 stat_turtle.launch`
 ### demo03_ws
+* This demo is about the ros communication mechanism including topic communication service communication and parameter server
 ### demo04_ws
+* Ros communication mechanism advanced，rosbag、rosnamespace、distributed communication
 ### demo05_ws
-- Display robot URDF models in rviz
-- Displayed The URDF car model in Gazebo
-- Implement navigation module
+* Display robot URDF models in rviz
+* Displayed The URDF car model in Gazebo
+* Implement navigation module
 ### demo06_ws
+* action communication、dynamic parameters、plugin mechanism
 
 ## References
 1. http://www.autolabor.com.cn/book/ROSTutorials/index.html
