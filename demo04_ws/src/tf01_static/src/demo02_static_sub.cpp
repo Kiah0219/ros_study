@@ -23,7 +23,9 @@ int main(int argc, char *argv[])
     ros::init(argc,argv,"tf_sub");
     ros::NodeHandle nh;
     // 3.创建 TF 订阅节点
+    //创建一个buffer缓存
     tf2_ros::Buffer buffer;
+    //创建监听对象，监听对象可以将订阅的数据存入buffer
     tf2_ros::TransformListener listener(buffer);
 
     ros::Rate r(1);
@@ -41,6 +43,7 @@ int main(int argc, char *argv[])
         //--------------使用 try 语句或休眠，否则可能由于缓存接收延迟而导致坐标转换失败------------------------
         try
         {
+            // point_base：这是转换后的点，即 point_laser 在“base_link”标系中的表示。
             geometry_msgs::PointStamped point_base;
             point_base = buffer.transform(point_laser,"base_link");
             ROS_INFO("转换后的数据:(%.2f,%.2f,%.2f),参考的坐标系是:%s",point_base.point.x,point_base.point.y,point_base.point.z,point_base.header.frame_id.c_str());

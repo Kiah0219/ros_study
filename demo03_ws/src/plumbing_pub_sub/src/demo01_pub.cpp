@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     int count = 0;
     ros::Duration(3);
     //编写循环，循环中发布数据
+    //ros::ok()：只要ROS节点处于运行状态，就会一直执行循环体中的代码。
     while (ros::ok())
     {
         setlocale(LC_ALL,"");
