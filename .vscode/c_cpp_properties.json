@@ -9,7 +9,8 @@
                 "/opt/ros/noetic/include/**",
                 "/usr/include/**",
                 "/opt/ros/noetic/include",
-                "/opt/ros/noetic/share/**"
+                "/opt/ros/noetic/share/**",
+                "${workspaceFolder}/demo06_ws/devel/include/**"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

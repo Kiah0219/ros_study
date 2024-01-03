@@ -63,7 +63,9 @@ int main(int argc, char *argv[])
             boost::function<void (const actionlib::SimpleClientGoalState &state, const demo01_action::AddIntsResultConstPtr &result)> done_cb, 
             boost::function<void ()> active_cb, 
             boost::function<void (const demo01_action::AddIntsFeedbackConstPtr &feedback)> feedback_cb)
-
+         done_cb – Callback that gets called on transitions to Done
+         active_cb – Callback that gets called on transitions to Active
+         feedback_cb – Callback that gets called whenever feedback for this goal is received
     */
     demo01_action::AddIntsGoal goal;
     goal.num = 10;

@@ -1,9 +1,12 @@
 #目标值
+# goal
 int32 num
 ---
 #最终结果
+# Result
 int32 result
 ---
 #连续反馈
+# Feedback
 float64 progress_bar
 
